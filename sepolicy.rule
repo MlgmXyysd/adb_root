@@ -4,6 +4,7 @@ allow adbd adbd process setcurrent
 allow adbd su process dyntransition
 #https://android.googlesource.com/platform/system/sepolicy/+/master/private/su.te
 allow su * * *
+permissive su
 #https://android.googlesource.com/platform/system/sepolicy/+/refs/heads/master/public/init.te
 allow init overlayfs_file dir relabelfrom
 allow init overlayfs_file dir mounton
